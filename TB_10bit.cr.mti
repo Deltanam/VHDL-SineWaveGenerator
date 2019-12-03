@@ -1,0 +1,153 @@
+{D:/ENEL453/Lab 5 - 10bit/BuzzFreq_LUT.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/ENEL453/Lab 5 - 10bit/BuzzFreq_LUT.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+** Warning: (vcom-6) -- Waiting for lock by "dan.tran2@ENG12435, pid = 2436
+". Lockfile is "D:/ENEL453/Lab 5 - 10bit/work/_lock".
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity BuzzFreq_Lookup
+-- Compiling architecture behavior of BuzzFreq_Lookup
+
+} {} {}} {D:/ENEL453/Lab 5 - 10bit/Voltmeter/SevenSegment.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/ENEL453/Lab 5 - 10bit/Voltmeter/SevenSegment.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity SevenSegment
+-- Compiling architecture Behavioral of SevenSegment
+
+} {} {}} {D:/ENEL453/Lab 5 - 10bit/register_stdlogic.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/ENEL453/Lab 5 - 10bit/register_stdlogic.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity registers_stdlogic
+-- Compiling architecture rtl of registers_stdlogic
+
+} {} {}} {D:/ENEL453/Lab 5 - 10bit/Voltmeter/binary_bcd.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/ENEL453/Lab 5 - 10bit/Voltmeter/binary_bcd.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity binary_bcd
+-- Compiling architecture behavior of binary_bcd
+
+} {} {}} {D:/ENEL453/Lab 5 - 10bit/WaveGen_Buzzer.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/ENEL453/Lab 5 - 10bit/WaveGen_Buzzer.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity WaveGen_Buzzer
+-- Compiling architecture Behavioral of WaveGen_Buzzer
+
+} {} {}} {D:/ENEL453/Lab 5 - 10bit/Voltmeter/averager2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/ENEL453/Lab 5 - 10bit/Voltmeter/averager2.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity gen_averager
+-- Compiling architecture rtl of gen_averager
+
+} {} {}} {D:/ENEL453/Lab 5 - 10bit/tb_Wave_Gen.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/ENEL453/Lab 5 - 10bit/tb_Wave_Gen.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_Wave_Gen
+-- Compiling architecture behaviour of tb_Wave_Gen
+** Warning: D:/ENEL453/Lab 5 - 10bit/tb_Wave_Gen.vhd(10): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}} {D:/ENEL453/Lab 5 - 10bit/Voltmeter/registers.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/ENEL453/Lab 5 - 10bit/Voltmeter/registers.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity registers
+-- Compiling architecture rtl of registers
+
+} {} {}} {D:/ENEL453/Lab 5 - 10bit/Voltmeter/SevenSegment_decoder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/ENEL453/Lab 5 - 10bit/Voltmeter/SevenSegment_decoder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity SevenSegment_decoder
+-- Compiling architecture Behavioral of SevenSegment_decoder
+
+} {} {}} {D:/ENEL453/Lab 5 - 10bit/Sine_LUT.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/ENEL453/Lab 5 - 10bit/Sine_LUT.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Sine_Lookup
+-- Compiling architecture behavior of Sine_Lookup
+
+} {} {}} {D:/ENEL453/Lab 5 - 10bit/Voltmeter/voltmeter.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/ENEL453/Lab 5 - 10bit/Voltmeter/voltmeter.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+** Warning: (vcom-6) -- Waiting for lock by "dan.tran2@ENG12435, pid = 12036
+". Lockfile is "D:/ENEL453/Lab 5 - 10bit/work/_lock".
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Voltmeter
+-- Compiling architecture Behavioral of Voltmeter
+
+} {} {}} {D:/ENEL453/Lab 5 - 10bit/Simulation/test_ADC.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/ENEL453/Lab 5 - 10bit/Simulation/test_ADC.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity test_DE10_Lite
+-- Compiling architecture behavior of test_DE10_Lite
+
+} {} {}} {D:/ENEL453/Lab 5 - 10bit/BuzzAmp_LUT.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/ENEL453/Lab 5 - 10bit/BuzzAmp_LUT.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity BuzzAmp_Lookup
+-- Compiling architecture behavior of BuzzAmp_Lookup
+
+} {} {}} {D:/ENEL453/Lab 5 - 10bit/Register.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/ENEL453/Lab 5 - 10bit/Register.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity RegisterInt
+-- Compiling architecture BEHAV of RegisterInt
+
+} {} {}} {D:/ENEL453/Lab 5 - 10bit/Voltmeter/voltage2distance.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/ENEL453/Lab 5 - 10bit/Voltmeter/voltage2distance.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity voltage2distance
+-- Compiling architecture behavior of voltage2distance
+
+} {} {}} {D:/ENEL453/Lab 5 - 10bit/Blocker.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/ENEL453/Lab 5 - 10bit/Blocker.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity Blocker
+-- Compiling architecture Behavioral of Blocker
+
+} {} {}}

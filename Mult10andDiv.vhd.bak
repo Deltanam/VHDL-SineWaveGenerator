@@ -1,0 +1,12 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use ieee.numeric_std.all;
+ 
+entity Mult10andDiv is
+    Port ( reset : in STD_LOGIC;
+           clk : in STD_LOGIC; -- clk is >> than 1 kHz, i.e. 100kHz and above
+           inputa, inputb : in STD_LOGIC_VECTOR(9 downto 0);
+			  output: out STD_LOGIC_VECTOR (9 downto 0)
+          );
+end Buzzer;

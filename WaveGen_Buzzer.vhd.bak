@@ -1,0 +1,18 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use ieee.numeric_std.all;
+ 
+entity WaveGen_Buzzer is
+    Port ( reset : in STD_LOGIC;
+           clk : in STD_LOGIC; -- clk is >> than 1 kHz, i.e. 100kHz and above
+			  switch : in STD_LOGIC;
+			  switch2: in STD_LOGIC;
+			  switch3: in STD_LOGIC;
+			  switch4: in STD_LOGIC;
+			  PWN_OUT: out STD_LOGIC;
+			  PWM_OUT2 : out STD_LOGIC;
+			  LEDR : out STD_LOGIC_VECTOR (9 downto 0);
+           HEX0,HEX1,HEX2,HEX3,HEX4,HEX5 : out STD_LOGIC_VECTOR (7 downto 0)
+          );
+end WaveGen_Buzzer;

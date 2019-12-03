@@ -1,0 +1,961 @@
+# Compile of Blocker.vhd failed with 3 errors.
+# Compile of BuzzAmp_LUT.vhd was successful.
+# Compile of Buzzer.vhd failed with 2 errors.
+# Compile of voltage2distance.vhd was successful with warnings.
+# Compile of BuzzFreq_LUT.vhd was successful with warnings.
+# Compile of Register.vhd was successful.
+# Compile of register_stdlogic.vhd was successful.
+# Compile of Sine_LUT.vhd was successful.
+# Compile of tb_Wave_Gen.vhd failed with 2 errors.
+# Compile of UpCounter.vhd was successful.
+# Compile of WaveGen_Buzzer.vhd was successful.
+# Compile of test_ADC.vhd was successful.
+# Compile of voltmeter.vhd was successful.
+# Compile of averager2.vhd was successful.
+# Compile of binary_bcd.vhd was successful.
+# Compile of registers.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of voltage2distance.vhd was successful.
+# 18 compiles, 3 failed with 7 errors.
+# Compile of Blocker.vhd was successful.
+# Compile of tb_Wave_Gen.vhd failed with 2 errors.
+# Compile of tb_Wave_Gen.vhd was successful with warnings.
+# Compile of Buzzer.vhd failed with 2 errors.
+# Compile of Buzzer.vhd was successful.
+vsim -gui work.tb_wave_gen
+# vsim -gui work.tb_wave_gen 
+# Start time: 08:24:21 on Dec 02,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_wave_gen(behaviour)
+# Loading work.wavegen_buzzer(behavioral)
+# Loading work.buzzer(behavioral)
+# Loading work.voltmeter(behavioral)
+# Loading work.voltage2distance(behavior)
+# Loading work.gen_averager(rtl)
+# Loading work.registers(rtl)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.test_de10_lite(behavior)
+# Loading work.binary_bcd(behavior)
+# Loading work.buzzfreq_lookup(behavior)
+# Loading work.buzzamp_lookup(behavior)
+# Loading work.registerint(behav)
+# Loading work.up_counter(behavioral)
+# Loading work.sine_lookup(behavior)
+# Loading work.registers_stdlogic(rtl)
+add wave -position end  sim:/tb_wave_gen/ARDUINO_IO
+run -all
+# ** Fatal: (vsim-3734) Index value -2147483648 is out of range 0 to 1023.
+#    Time: 0 ps  Iteration: 0  Process: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/SineLUT/line__1066 File: D:/ENEL453/Lab 5 - 10bit/Sine_LUT.vhd
+# Fatal error in Architecture behavior at D:/ENEL453/Lab 5 - 10bit/Sine_LUT.vhd line 1066
+# 
+# HDL call sequence:
+# Stopped at D:/ENEL453/Lab 5 - 10bit/Sine_LUT.vhd 1066 Architecture behavior
+# 
+quit -sim
+# End time: 08:29:09 on Dec 02,2019, Elapsed time: 0:04:48
+# Errors: 2, Warnings: 0
+# Compile of Sine_LUT.vhd failed with 1 errors.
+# Compile of Sine_LUT.vhd was successful.
+vsim -gui work.tb_wave_gen
+# vsim -gui work.tb_wave_gen 
+# Start time: 08:30:00 on Dec 02,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_wave_gen(behaviour)
+# Loading work.wavegen_buzzer(behavioral)
+# Loading work.buzzer(behavioral)
+# Loading work.voltmeter(behavioral)
+# Loading work.voltage2distance(behavior)
+# Loading work.gen_averager(rtl)
+# Loading work.registers(rtl)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.test_de10_lite(behavior)
+# Loading work.binary_bcd(behavior)
+# Loading work.buzzfreq_lookup(behavior)
+# Loading work.buzzamp_lookup(behavior)
+# Loading work.registerint(behav)
+# Loading work.up_counter(behavioral)
+# Loading work.sine_lookup(behavior)
+# Loading work.registers_stdlogic(rtl)
+add wave -position end  sim:/tb_wave_gen/ARDUINO_IO
+add wave -position 0 sim:/tb_wave_gen/clk_process/*
+# (vish-4014) No objects found matching 'sim:/tb_wave_gen/clk_process/*'.
+add wave -position 0  sim:/tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/clk
+add wave -position 1  sim:/tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/reset
+add wave -position 2  sim:/tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/PWM_OUT2
+add wave -position 2  sim:/tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/increment
+run -all
+# ** Fatal: (vsim-3734) Index value -2147483648 is out of range 0 to 4095.
+#    Time: 0 ps  Iteration: 0  Process: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/AmpLUT/line__4143 File: D:/ENEL453/Lab 5 - 10bit/BuzzAmp_LUT.vhd
+# Fatal error in Architecture behavior at D:/ENEL453/Lab 5 - 10bit/BuzzAmp_LUT.vhd line 4143
+# 
+# HDL call sequence:
+# Stopped at D:/ENEL453/Lab 5 - 10bit/BuzzAmp_LUT.vhd 4143 Architecture behavior
+# 
+quit -sim
+# End time: 08:33:46 on Dec 02,2019, Elapsed time: 0:03:46
+# Errors: 3, Warnings: 0
+# Compile of BuzzFreq_LUT.vhd was successful with warnings.
+# Compile of BuzzFreq_LUT.vhd was successful with warnings.
+# Compile of BuzzAmp_LUT.vhd was successful.
+# Compile of BuzzAmp_LUT.vhd was successful.
+vsim -gui work.tb_wave_gen
+# vsim -gui work.tb_wave_gen 
+# Start time: 08:34:46 on Dec 02,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_wave_gen(behaviour)
+# Loading work.wavegen_buzzer(behavioral)
+# Loading work.buzzer(behavioral)
+# Loading work.voltmeter(behavioral)
+# Loading work.voltage2distance(behavior)
+# Loading work.gen_averager(rtl)
+# Loading work.registers(rtl)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.test_de10_lite(behavior)
+# Loading work.binary_bcd(behavior)
+# Loading work.buzzfreq_lookup(behavior)
+# Loading work.buzzamp_lookup(behavior)
+# Loading work.registerint(behav)
+# Loading work.up_counter(behavioral)
+# Loading work.sine_lookup(behavior)
+# Loading work.registers_stdlogic(rtl)
+add wave -position end  sim:/tb_wave_gen/clk
+add wave -position end  sim:/tb_wave_gen/reset
+add wave -position end  sim:/tb_wave_gen/ARDUINO_IO
+add wave -position end  sim:/tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/temp_increment
+add wave -position end  sim:/tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/increment
+add wave -position end  sim:/tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/index_i2
+run -all
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(64)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(64)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(63)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(63)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(62)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(62)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(61)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(61)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(60)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(60)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(59)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(59)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(58)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(58)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(57)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(57)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(56)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(56)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(55)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(55)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(54)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(54)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(53)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(53)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(52)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(52)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(51)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(51)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(50)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(50)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(49)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(49)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(48)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(48)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(47)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(47)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(46)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(46)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(45)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(45)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(44)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(44)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(43)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(43)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(42)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(42)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(41)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(41)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(40)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(40)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(39)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(39)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(38)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(38)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(37)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(37)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(36)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(36)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(35)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(35)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(34)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(34)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(33)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(33)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(32)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(32)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(31)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(31)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(30)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(30)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(29)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(29)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(28)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(28)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(27)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(27)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(26)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(26)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(25)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(25)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(24)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(24)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(23)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(23)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(22)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(22)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(21)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(21)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(20)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(20)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(19)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(19)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(18)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(18)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(17)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(17)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(16)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(16)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(15)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(15)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(14)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(14)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(13)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(13)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(12)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(12)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(11)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(11)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(10)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(10)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(9)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(9)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(8)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(8)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(7)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(7)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(6)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(6)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/v2d
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/v2d
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/v2d
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/v2d
+# Compile of tb_Wave_Gen.vhd was successful with warnings.
+restart
+# Loading work.tb_wave_gen(behaviour)
+run -all
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(64)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(64)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(63)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(63)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(62)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(62)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(61)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(61)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(60)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(60)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(59)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(59)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(58)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(58)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(57)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(57)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(56)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(56)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(55)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(55)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(54)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(54)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(53)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(53)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(52)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(52)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(51)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(51)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(50)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(50)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(49)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(49)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(48)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(48)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(47)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(47)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(46)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(46)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(45)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(45)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(44)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(44)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(43)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(43)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(42)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(42)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(41)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(41)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(40)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(40)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(39)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(39)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(38)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(38)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(37)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(37)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(36)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(36)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(35)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(35)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(34)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(34)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(33)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(33)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(32)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(32)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(31)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(31)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(30)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(30)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(29)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(29)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(28)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(28)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(27)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(27)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(26)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(26)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(25)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(25)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(24)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(24)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(23)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(23)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(22)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(22)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(21)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(21)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(20)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(20)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(19)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(19)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(18)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(18)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(17)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(17)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(16)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(16)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(15)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(15)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(14)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(14)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(13)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(13)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(12)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(12)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(11)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(11)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(10)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(10)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(9)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(9)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(8)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(8)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(7)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(7)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(6)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(6)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/v2d
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/v2d
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/v2d
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/v2d
+# Compile of Buzzer.vhd was successful.
+# Compile of voltmeter.vhd was successful with warnings.
+# Compile of Sine_LUT.vhd was successful with warnings.
+# Compile of Sine_LUT.vhd was successful.
+restart
+# Loading work.buzzer(behavioral)
+# Loading work.voltmeter(behavioral)
+# ** Warning: (vsim-3473) Component instance "ADC_Conversion_ins : ADC_Conversion" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron File: D:/ENEL453/Lab 5 - 10bit/Voltmeter/voltmeter.vhd
+# Loading work.sine_lookup(behavior)
+run -all
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(64)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(64)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(63)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(63)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(62)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(62)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(61)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(61)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(60)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(60)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(59)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(59)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(58)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(58)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(57)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(57)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(56)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(56)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(55)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(55)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(54)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(54)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(53)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(53)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(52)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(52)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(51)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(51)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(50)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(50)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(49)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(49)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(48)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(48)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(47)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(47)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(46)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(46)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(45)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(45)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(44)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(44)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(43)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(43)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(42)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(42)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(41)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(41)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(40)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(40)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(39)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(39)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(38)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(38)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(37)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(37)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(36)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(36)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(35)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(35)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(34)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(34)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(33)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(33)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(32)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(32)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(31)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(31)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(30)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(30)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(29)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(29)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(28)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(28)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(27)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(27)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(26)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(26)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(25)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(25)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(24)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(24)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(23)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(23)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(22)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(22)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(21)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(21)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(20)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(20)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(19)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(19)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(18)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(18)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(17)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(17)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(16)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(16)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(15)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(15)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(14)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(14)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(13)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(13)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(12)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(12)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(11)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(11)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(10)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(10)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(9)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(9)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(8)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(8)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(7)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(7)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(6)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(6)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/ave/LoopB1(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/v2d
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/v2d
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/v2d
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_wave_gen/WaveGen_Buzzer_ins/QueenBee/Voltron/v2d
+# End time: 13:49:37 on Dec 02,2019, Elapsed time: 5:14:51
+# Errors: 3, Warnings: 397
