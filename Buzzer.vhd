@@ -27,7 +27,7 @@ architecture Behavioral of Buzzer is
 					LEDR                          : out STD_LOGIC_VECTOR (9 downto 0);
 					HEX0,HEX1,HEX2,HEX3,HEX4,HEX5 : out STD_LOGIC_VECTOR (7 downto 0);
 					distance							  : out STD_LOGIC_VECTOR (12 downto 0);
-					index								  : out integer
+					index,distance2					:  OUT   integer
 					);
 	end Component;
 	
@@ -86,7 +86,7 @@ BEGIN
 Voltron: Voltmeter
 	port map(clk => clk, reset => reset, LEDR => LEDR,
 				 HEX0 => HEX0, HEX1 => HEX1, HEX2 => HEX2, HEX3 => HEX3, HEX4 => HEX4, HEX5 => HEX5,
-				 index => index_i);	
+				 distance2 => index_i);	
 	
 FreqLUT: BuzzFreq_Lookup
 	port map(clk => clk, reset => reset, index => index_freq, Increment => increment);

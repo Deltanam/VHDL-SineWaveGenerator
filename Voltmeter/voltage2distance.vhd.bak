@@ -27,7 +27,7 @@ ENTITY voltage2distance IS
       reset          :  IN    STD_LOGIC;                                
       voltage        :  IN    STD_LOGIC_VECTOR(12 DOWNTO 0);                           
       distance       :  OUT   STD_LOGIC_VECTOR(12 DOWNTO 0);
-		index,distance2:  OUT   integer;
+		index				:  OUT   integer;
 		switchshort		:  IN		STD_LOGIC
 		);
 END voltage2distance;
@@ -8255,7 +8255,6 @@ begin
 	
 	distance <= std_logic_vector(to_unsigned(v2d_LUTshort(to_integer(unsigned(voltage))),distance'length)) when (switchshort = '1') else std_logic_vector(to_unsigned(v2d_LUT(to_integer(unsigned(voltage))),distance'length));
 	index <= to_integer(unsigned(voltage));
-	distance2 <= v2d_LUT(to_integer(unsigned(voltage)));
 --   distance <= std_logic_vector(to_unsigned(v2d_LUTshort(to_integer(unsigned(voltage))),distance'length));
 --   distance <= std_logic_vector(to_unsigned(v2d_LUT(to_integer(unsigned(voltage))),distance'length));
 

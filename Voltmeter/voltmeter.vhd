@@ -8,7 +8,7 @@ entity Voltmeter is
            LEDR                          : out STD_LOGIC_VECTOR (9 downto 0);
            HEX0,HEX1,HEX2,HEX3,HEX4,HEX5 : out STD_LOGIC_VECTOR (7 downto 0);
 			  distance							  : out STD_LOGIC_VECTOR (12 downto 0);
-			  index								  : out integer
+			  index,distance2					  : out integer
           );
            
 end Voltmeter;
@@ -80,7 +80,7 @@ Component voltage2distance is
       reset          :  IN    STD_LOGIC;                                
       voltage        :  IN    STD_LOGIC_VECTOR(12 DOWNTO 0);                           
       distance       :  OUT   STD_LOGIC_VECTOR(12 DOWNTO 0);
-		index				:  OUT   integer;
+		index,distance2:  OUT   integer;
 		switchshort		:  IN		STD_LOGIC
 		);  
   end Component;
@@ -112,6 +112,7 @@ v2d: voltage2distance
 						voltage  => voltage,
 						distance => Q_temp3,
 						index => index_i,
+						distance2 => distance2,
 						switchshort => switchshort
 		);  
 						
