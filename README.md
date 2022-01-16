@@ -6,4 +6,6 @@ When the board pins are connected to a voltage divider and low-pass filter (cons
 
 Through the use of buttons, the frequency and amplitude of this sine wave may be increased or decreased by changing the increment.
 
+See "Lab 5.pdf" for architectural image.
+
 Completed as the final project (5th practical lab) for ENEL 453 - Digital Systems Design
